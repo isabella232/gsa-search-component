@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="dialog"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Settings">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <collections
+                        jcr:primaryType="cq:Widget"
+                        defaultValue=""
+                        fieldDescription="Put in each value you for your dropdown formated (value:displayName) IG intranet:Search Intranet  Don't forget to add in search all option if needed Example: default_collection:Search Everything"
+                        fieldLabel="Search Collections Drop Down Values"
+                        name="./searchCollections"
+                        xtype="multifield"/>
+                    <autoUrlParams
+                        jcr:primaryType="cq:Widget"
+                        defaultValue=""
+                        fieldDescription="Add in any aditional parameters to pass with each query.  IG  site=operations  This will override any passed parameters with the same name."
+                        fieldLabel="Url parameters to add to all queries"
+                        name="./urlParams"
+                        xtype="multifield"/>
+                    <searchAsYouType
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="false"
+                        fieldLabel="Search as you type"
+                        name="./searchAsYouType"
+                        xtype="checkbox"/>
+                    <numberOfResults
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="20"
+                        fieldLabel="Number of results per set"
+                        maxValue="{Long}100"
+                        minValue="{Long}1"
+                        name="./resultSetSize"
+                        xtype="numberfield"/>
+                    <showSpellingSuggest
+                        jcr:primaryType="cq:Widget"
+                        checked="{Boolean}true"
+                        fieldLabel="Show Spelling Suggestions"
+                        name="./showSpellingSuggestions"
+                        xtype="checkbox"/>
+                    <showKeyMatches
+                        jcr:primaryType="cq:Widget"
+                        checked="{Boolean}true"
+                        fieldLabel="Show KeyMatch"
+                        name="./showKeyMatch"
+                        xtype="checkbox"/>
+                </items>
+            </tab1>
+            <tab3
+                jcr:primaryType="cq:Panel"
+                title="Template">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <template
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="&lt;tpl for=&quot;.&quot;>&lt;div class=&quot;search-result&quot;>&lt;div class=&quot;title&quot;>&lt;a href=&quot;{U}&quot;>{T}&lt;/a>&lt;/div>&lt;div class=&quot;snippet&quot;>{S}&lt;/div>&lt;div class=&quot;url&quot;>{U}&lt;/div>&lt;/div>&lt;/tpl>&lt;div class=&quot;x-clear&quot;>&lt;/div>"
+                        fieldDescription="U,UE,T,RK,CRAWLDATE,FS,S,LANG are all imported for use in CQ Widget templates"
+                        height="150"
+                        hideLabel="{Boolean}true"
+                        name="./tpl"
+                        xtype="textarea"/>
+                </items>
+            </tab3>
+            <tab2
+                jcr:primaryType="cq:Panel"
+                title="Style">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <style
+                        jcr:primaryType="cq:Widget"
+                        defaultValue=".gsa-search { width: 100%; } .search-form {} .search-form .search-submit { background-image: url('/apps/gsasearch/components/gsasearchresults/images/search-button.gif'); background-repeat: no-repeat; width : 36px; height : 25px; display: block; cursor : pointer; cursor : hand; } .search-results { width: 100%; } #searchbox{width: 250px} #search-results-panel { width: 100%; } .search-result { display: block; margin-bottom: 10px; width: 100%; } .search-result .title { width: 100%; } .search-result .title a { text-decoration: none; border-bottom: 1px dotted red; } .search-result .title a:hover { text-decoration: none; border-bottom: 1px dotted red; } .search-result .snippet { width: 100%; } .search-result .url { width: 100%; color: green; }.x-tbar-page-first{background-image: url(/libs/cq/ui/widgets/themes/default/ext/grid/page-first.gif) !important; background-repeat: no-repeat; background-position:center; background-color: transparent;}.x-tbar-page-prev{background-image: url(/libs/cq/ui/widgets/themes/default/ext/grid/page-prev.gif) !important; background-repeat: no-repeat; background-position:center; background-color: transparent;}.x-tbar-page-next{background-image: url(/libs/cq/ui/widgets/themes/default/ext/grid/page-next.gif) !important; background-repeat: no-repeat; background-position:center; background-color: transparent;}.x-tbar-page-last{background-image: url(/libs/cq/ui/widgets/themes/default/ext/grid/page-last.gif) !important; background-repeat: no-repeat; background-position:center; background-color: transparent;}.x-tbar-loading{background-image: url(/libs/cq/ui/widgets/themes/default/ext/grid/refresh.gif) !important; background-repeat: no-repeat; background-position:center; background-color: transparent;}div.keymatch{ background-color: #EFEFEF;  padding-bottom: .5em;  padding-left: .5em;  padding-top: .5em; margin-top: 1em; margin-bottom: 1em;}div.keymatch .label{}div.keymatch .label a{} div.keymatch .url{color: green;}"
+                        height="250"
+                        hideLabel="{Boolean}true"
+                        name="./style"
+                        xtype="textarea"/>
+                </items>
+            </tab2>
+        </items>
+    </items>
+</jcr:root>

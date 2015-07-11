@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>FileVault Package Properties</comment>
+<entry key="createdBy">admin</entry>
+<entry key="name">GSA Search</entry>
+<entry key="uploaded">2012-10-24T15:41:31.902-07:00</entry>
+<entry key="lastModified">2012-06-13T17:21:21.496-04:00</entry>
+<entry key="lastModifiedBy">admin</entry>
+<entry key="acHandling">&amp;nbsp;</entry>
+<entry key="created">2012-06-13T17:21:21.589-04:00</entry>
+<entry key="uploadedBy">admin</entry>
+<entry key="buildCount">21</entry>
+<entry key="version">2.5</entry>
+<entry key="dependencies"/>
+<entry key="packageFormatVersion">2</entry>
+<entry key="description">The GSA Search component that allows you to search and return results from a Google Search Appliance.&#13;
+&#13;
+Features Include&#13;
+- page query parameters are passed to the search&#13;
+- local GSA proxy&#13;
+- author can configure the number of results returned&#13;
+- author can configure component to include a collection selection drop down&#13;
+- author can turn off or on spelling suggestions&#13;
+- author can turn off and on KeyMatch results&#13;
+- author can set parameters that will override the url parameters and auto append needed parameters&#13;
+- author can turn on auto searching.  This feature searches for every keystroke made in the search box.&#13;
+- source code for both the component and the proxy are included</entry>
+<entry key="lastWrapped">2012-06-13T17:21:21.496-04:00</entry>
+<entry key="group">day_internal/adobe_at_adobe</entry>
+<entry key="lastWrappedBy">admin</entry>
+</properties>

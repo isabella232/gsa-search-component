@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:vlt="http://www.day.com/jcr/vault/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:created="{Date}2012-06-13T17:21:21.496-04:00"
+    jcr:createdBy="admin"
+    jcr:description="The GSA Search component that allows you to search and return results from a Google Search Appliance.&#xd;&#xa;&#xd;&#xa;Features Include&#xd;&#xa;- page query parameters are passed to the search&#xd;&#xa;- local GSA proxy&#xd;&#xa;- author can configure the number of results returned&#xd;&#xa;- author can configure component to include a collection selection drop down&#xd;&#xa;- author can turn off or on spelling suggestions&#xd;&#xa;- author can turn off and on KeyMatch results&#xd;&#xa;- author can set parameters that will override the url parameters and auto append needed parameters&#xd;&#xa;- author can turn on auto searching.  This feature searches for every keystroke made in the search box.&#xd;&#xa;- source code for both the component and the proxy are included"
+    jcr:lastModified="{Date}2012-06-13T17:21:21.496-04:00"
+    jcr:lastModifiedBy="admin"
+    jcr:primaryType="vlt:PackageDefinition"
+    sling:resourceType="cq/packaging/components/pack/definition"
+    acHandling="&amp;nbsp;"
+    buildCount="21"
+    builtWith="Adobe CQ5-5.5.0"
+    cqVersion="5.3"
+    fixedBugs="Updated to work with the released version CQ 5.5 &#xd;&#xa;Fixed result set size on initial load not matching the component settings."
+    group="day_internal/adobe_at_adobe"
+    lastUnwrapped="{Date}2012-06-13T17:21:21.496-04:00"
+    lastUnwrappedBy="admin"
+    lastWrapped="{Date}2012-06-13T17:21:21.496-04:00"
+    lastWrappedBy="admin"
+    name="GSA Search"
+    path="/etc/packages/day_internal/presales/packlib/misc/GSA Search-2.3"
+    providerLink=""
+    providerName="Adobe Systems Incorporated"
+    providerUrl="https://blogs.adobe.com/aaa"
+    testedWith="CQ 5.4, CQ 5.5"
+    version="2.5">
+    <thumbnail.png/>
+    <thumbnail jcr:primaryType="nt:unstructured">
+        <file/>
+    </thumbnail>
+    <screenshots jcr:primaryType="nt:unstructured">
+        <df8efd83-ee78-4015-9c8b-3d3faa0eae40 jcr:primaryType="nt:unstructured">
+            <file/>
+        </df8efd83-ee78-4015-9c8b-3d3faa0eae40>
+        <_x0034_0aedb00-38cb-4379-b2b8-3eeee606cd97 jcr:primaryType="nt:unstructured">
+            <file/>
+        </_x0034_0aedb00-38cb-4379-b2b8-3eeee606cd97>
+    </screenshots>
+    <filter jcr:primaryType="nt:unstructured">
+        <f0
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            root="/apps/gsasearch"
+            rules="[]"/>
+    </filter>
+</jcr:root>
