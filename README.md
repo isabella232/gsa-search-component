@@ -1,5 +1,5 @@
 # AdobeAtAdobe's AEM 5.6.1 GSA search component 
-
+![TrackingImage](https://adobeatadobe.d1.sc.omtrdc.net/b/ss/adbeaaagit/1/H.27.5--NS/0?AQB=1&ndh=1&ce=UTF-8&ns=adobeatadobe&pageName=github%3Agsa-search-component%3Areadme&g=%2FAdobeAtAdobe%2Fgsa-search-component&ch=github)
 The GSA Search component that allows you to search and return results from a Google Search Appliance.
 Tested with AEM 5.6.1
 
